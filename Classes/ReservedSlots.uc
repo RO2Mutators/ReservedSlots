@@ -1,5 +1,5 @@
 /*!
- * @defgroup ResSlots Reserve Slots Mutator
+ * @defgroup ResSlots Reserved Slots Mutator
  * @brief    Mutator to reserve slots on a server
  * @author   Marlon van den Berg (~{W|L}~Ducky)
  * @version  Beta 1
@@ -11,8 +11,8 @@
 /*!
  * @brief  Main class to hook up with the game engine
  */
-class ReserveSlots extends Mutator
-	config(ReserveSlots);
+class ReservdeSlots extends Mutator
+	config(ReservedSlots);
 
 /*!
  * @brief Config variable for enabling/disabling debug info logging
@@ -24,7 +24,7 @@ var config bool   bEnableLogging;
  */
 function PostBeginPlay()
 {
-	`Log("ReserveSlots Beta 1 by ~{W|L}~Ducky is active!!!",, 'ReserveSlots');
+	`Log("ReserveSlots Beta 1 by ~{W|L}~Ducky is active!!!",, 'ReservedSlots');
 	
 	super.PostBeginPlay();
 }
